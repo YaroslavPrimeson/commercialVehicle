@@ -1,0 +1,187 @@
+@import "../../index.scss";
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Noname Elements
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.NonameBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: $font-2;
+  font-weight: bolder;
+  height: $height-input-btn;
+  font-size: $font-size-input-btn;
+  line-height: $height-input-btn;
+  color: $black-color;
+  background-color: transparent;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.NonameBtn:hover{
+  background-color: black!important;
+  color: white;
+}
+
+.DoubleButton{
+  //height: $height-input-btn;
+  //font-size: $font-size-input-btn;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: .3rem;
+
+  .NonameBtn1{
+    width: 100%;
+    font-family: $font-2;
+    font-weight: bolder;
+    height: $height-input-btn;
+    text-align: center;
+
+    font-size: $font-size-input-btn;
+    line-height: $height-input-btn;
+    color: $black-color;
+    background-color: transparent;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+
+    cursor: pointer;
+  }
+  .NonameBtn1:hover{
+    background-color: black!important;
+    color: white;
+  }
+  .NonameBtn2{
+    width: 100%;
+    font-family: $font-2;
+    font-weight: bolder;
+    height: $height-input-btn;
+    text-align: center;
+
+    font-size: $font-size-input-btn;
+    line-height: $height-input-btn;
+    color: $white-color;
+    background-color: $black-color;
+    border-bottom-right-radius: .3rem;
+    border-top-right-radius: .3rem;
+    cursor: pointer;
+  }
+  .NonameBtn2:hover{
+    background-color: $white-color!important;
+    color: $black-color;
+  }
+
+
+  .row{
+    flex-wrap: nowrap!important;
+    margin: 0!important;
+  }
+  .col{
+    padding: 0!important;
+  }
+  .col-md-6{
+    padding: 0!important;
+  }
+}
+.NonameBtn{
+  width: 100%;
+  font-family: $font-2;
+  font-weight: bolder;
+  height: $height-input-btn;
+  text-align: center;
+
+  font-size: $font-size-input-btn;
+  line-height: $height-input-btn;
+  color: $black-color;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+.NonameBtn:hover{
+  background-color: black!important;
+  color: white;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Change Bootstrap and Basic Elements
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.nav-tabs .nav-link{
+  color: $black-color;
+}
+.row{
+  flex-wrap: nowrap!important;
+  margin: 0!important;
+}
+.col{
+  padding: 0!important;
+}
+.col-md-6{
+  padding: 0!important;
+}
+.form-check{
+  //margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+label{
+  font-family: $font-2;
+  font-weight: bolder;
+}
+.btn{
+  width: 100%;
+  font-family: $font-2;
+  font-weight: bolder;
+  height: $height-input-btn;
+  //padding: $size-pading2 $size-pading;
+  font-size: $font-size-input-btn;
+  line-height: $size-pading2;
+  color: $black-color;
+  background-color: transparent!important;
+  border-color: $black-color!important;
+}
+.btn:hover{
+  background-color: black!important;
+  color: white;
+}
+.btn:focus{
+  color: $black-color;
+  outline: none!important;
+  background-color: #fff;
+  border: 1px solid $black-color;
+  outline: 0!important;
+  box-shadow: none!important;
+}
+.BtnOutline{
+  background-color: $black-color!important;
+  color: white!important;
+}
+.BtnOutline:hover{
+  background-color: white!important;
+  color: $black-color!important;
+  border-color: $black-color!important;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  //height: $height-input-btn;
+  height: 51px;
+  //padding: $size-pading2 $size-pading;
+  font-family: $font-2;
+  font-size: $font-size-input-btn;
+  line-height: $size-pading2;
+  font-weight: bolder;
+  color: black;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus{
+  color: black;
+  outline: none!important;
+  background-color: #fff;
+  border: 1px solid black;
+  outline: 0!important;
+  box-shadow: none!important;
+}

@@ -1,0 +1,42 @@
+@import "../../index";
+
+.TrucksMap {
+  height: calc(100vh - 4.8rem * 2);
+  position: relative;
+
+}
+
+.SearchingFilter {
+  height: calc(100vh - 4.8rem * 2);
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.SearchingTitle {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+
+  color: $white-color;
+  font-size: 1rem;
+  animation: 1s pulsing infinite;
+}
+
+@keyframes pulsing {
+  from {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+

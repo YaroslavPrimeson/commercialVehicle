@@ -1,0 +1,90 @@
+
+
+$size-pading-arrow: calc(1vh + 1vw);
+$size-pading-arrow-top: calc(1vh + 1vw);
+$size-text2: 25px;
+$size-text-button: 25px;
+$size-pading: calc(1vh + 1vw);
+$text-color: black;
+
+.SelWrapper {
+
+  display: block;
+
+  //top: -50px;
+  &__title{
+    padding: 0 30px 0 0;
+    margin: 10px 0 0 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+
+    &__ul--wrapper{
+      //position: relative;
+      //overflow: hidden;
+      box-sizing: border-box;
+    }
+    & ul {
+      //width: 203px;
+      //top: 5%;
+      background-color: transparent;
+      z-index: 10;
+    }
+  }
+
+  margin: 0;
+  padding: $size-pading;
+  border: 1px solid $text-color;
+  position: absolute;
+  //width: 100%;
+  //min-width: 100px;
+  //color: $white-color;
+  //height: $size-text3;
+  line-height: $size-text2;
+  //font-family: $font-2;
+  font-size: $size-text-button;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    right: $size-pading-arrow;
+    top: $size-pading-arrow-top;
+    transform: rotate(-225deg);
+    width: 13px;
+    height: 13px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: $text-color;
+    display: block;
+    transition: transform .2s;
+  }
+
+  &.ActSelect {
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    li {
+      &:hover {
+        color: goldenrod;
+        color: red;
+      }
+    }
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.FrstItem {
+  color: red;
+}
+
+.SeltItem {
+  padding-top: 1vh;
+}

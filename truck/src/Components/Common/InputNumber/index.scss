@@ -1,0 +1,70 @@
+
+
+
+$size-pading-arrow: calc(1vh + 1vw);
+$size-pading-arrow-top: calc(1vh + 1vw);
+
+.InputNumberButton {
+  position: absolute;
+  width: 10px;
+  height: 6px;
+}
+
+.InputNumber {
+  position: relative;
+  //fill: $text-color;
+
+  input[name=input-number] {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1.4vw 1vw;
+    min-width: 100px;
+  }
+
+  .InputUp {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+
+    &::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      //right: $size-pading-arrow;
+      //top: $size-pading-arrow-top;
+      transform: rotate(-45deg);
+      width: 13px;
+      height: 13px;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      //border-color: $text-color;
+      display: block;
+      transition: transform .2s;
+    }
+  }
+
+  .InputDown {
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+
+    &::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      //right: $size-pading-arrow;
+      //top: $size-pading-arrow-top;
+      transform: rotate(-225deg);
+      width: 13px;
+      height: 13px;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      //border-color: $text-color;
+      display: block;
+      transition: transform .2s;
+    }
+  }
+
+
+}

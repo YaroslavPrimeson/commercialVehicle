@@ -1,0 +1,244 @@
+@import "../../index";
+
+
+.AuthContainer{
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  font-family: $font-2;
+  font-weight: bolder;
+}
+.AuthContainerBlackLine{
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  top: 30vh;
+  background-color: black;
+}
+.AuthContainerInputFormCol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1315;
+}
+.AuthContainerAll{
+  width: 100%;
+  padding: 2rem;
+//  min-width: 90%;
+//  min-height: 40vh;
+//  max-height: 90vh;
+//  background-color: white;
+//  border-radius: .5rem;
+//  padding-top: 3vh;
+//  padding-left: 2vh;
+//  padding-right: 2vh;
+//  box-shadow: 0 0 2vh rgba(0,0,0,0.5);
+}
+.AuthContainerInputForm{
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 2vh;
+}
+.AuthBottomContainer{
+  padding: 2vh;
+  padding-bottom: 3vh;
+  bottom: 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.AuthLeftContainer{
+  position: absolute;
+  height: 40vh;
+  top: 30vh;
+  width: 100%;
+  max-width: 500px;
+  color: $white-color;
+  padding: 2vh;
+}
+.AuthLeftContainerHeader{
+  font-family: $font-1;
+  font-size: calc(3vh + 3vw);
+}
+.AuthLeftContainerText{
+  font-family: $font-2;
+  //font-size: calc(3vh + 3vw);
+}
+////////////////////////////////////////////////////////////////////
+// Firebase UI
+////////////////////////////////////////////////////////////////////
+.firebaseui-idp-button{
+  text-align: center!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 100%;
+  max-width: 900px!important;
+  background-color: $background!important;
+  color: $white-color!important;
+  border: 1px solid $white-color!important;
+
+  font-weight: 900!important;
+  line-height: 1rem!important;
+  font-size: 1rem!important;
+  white-space: nowrap!important;
+
+  border-radius: 0rem!important;
+  padding: 2rem!important;
+
+  transition: .3s ease-in-out;
+}
+.firebaseui-idp-button:hover{
+  background-color: $background!important;
+  color: $white-color!important;
+  border: 1px solid $white-color!important;
+  .firebaseui-idp-text{
+    color: $white-color!important;
+  }
+}
+.firebaseui-idp-button:hover .firebaseui-idp-text{
+  color: $white-color!important;
+}
+.firebaseui-idp-google .firebaseui-idp-text{
+  color: $white-color!important;
+}
+.firebaseui-card-content{
+  padding: 0!important;
+}
+.firebaseui-container{
+  max-width: 900px!important;
+  margin: 0!important;
+  background-color: $background!important;
+  color: $white-color!important;
+}
+.firebaseui-title{
+  color: $white-color!important;
+  font-weight: 900!important;
+}
+.firebaseui-country-selector {
+  color: $white-color!important;
+}
+.firebaseui-textfield.mdl-textfield .firebaseui-input{
+  color: $white-color!important;
+}
+.firebaseui-input .firebaseui-input-invalid{
+  color: $white-color!important;
+}
+.firebaseui-label{
+  color: $white-color!important;
+}
+.firebaseui-dialog{
+  background-color: $background!important;
+  border: 1px solid $white-color!important;
+  border-radius: 3rem;
+}
+.firebaseui-list-box-label-wrapper{
+  color: $white-color!important;
+}
+.mdl-button--raised.mdl-button--colored{
+  text-align: center!important;
+  max-width: 900px!important;
+  background-color: $background!important;
+  color: $white-color!important;
+  border: 1px solid $white-color!important;
+  font-weight: 900!important;
+  border-radius: 2rem * 2!important;
+  transition: .3s ease-in-out;
+}
+.mdl-button--raised.mdl-button--colored:hover{
+  background-color: $background!important;
+  color: $white-color!important;
+  border: 1px solid $white-color!important;
+}
+.mdl-button--primary.mdl-button--primary{
+  text-align: center!important;
+  max-width: 900px!important;
+  //background-color: $background-color-1!important;
+  color: $white-color!important;
+  //border: 1px solid $main-color-3!important;
+
+  font-weight: 900!important;
+  border-radius: 2rem * 2!important;
+  transition: .3s ease-in-out;
+}
+.firebaseui-text{
+  color: $white-color!important;
+  a{
+    color: $text-color!important;
+  }
+}
+.firebaseui-id-resend-link{
+  color: $white-color!important;
+}
+.firebaseui-link{
+  color: $white-color!important;
+}
+.mdl-shadow--2dp{
+  box-shadow: none!important;
+}
+.firebaseui-id-resend-countdown{
+  color: $white-color!important;
+}
+input.firebaseui-input, input.firebaseui-input-invalid{
+  color: $white-color!important;
+}
+.firebaseui-container{
+  dialog{
+    color: $white-color!important;
+  }
+}
+dialog{
+  color: $white-color!important;
+}
+.firebaseui-container{
+  margin: 0!important;
+}
+////////////////////////////////////////////////////////
+//////////////////AUTH BUTTON
+/////////////////////////////////////////////////////////
+.authButton__container{
+  border: 1px solid $white-color;
+  //height: 300px;
+}
+.authButton__button__container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.authButton{
+  height: 50px;
+  width: 45%;
+  border: 1px solid $white-color;
+  color: $white-color;
+  padding: 2rem!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.authButton:hover{
+  background-color: $white-color;
+  color: $black-color;
+}
+.nav-tabs{
+border: none!important;
+}
+.mdl-button:hover{
+  border: none!important;
+}
+.firebaseui-idp-button{
+  border: none!important;
+  box-shadow: none!important;
+}
+.firebaseui-list-item{
+  border-bottom: 1px solid $white-color;
+  &:last-child{
+    border-bottom: none!important;
+  }
+}
+.nav-item{
+  color:$white-color!important ;
+}
+.nav-link.active{
+  color: $black-color!important;
+}

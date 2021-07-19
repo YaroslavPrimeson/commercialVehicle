@@ -1,0 +1,259 @@
+@import "../../index";
+
+/////////////////////////////////////////////////////////////////////////////////////
+// MAIN PAGE
+/////////////////////////////////////////////////////////////////////////////////////
+.PageContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  //font-size: 5vh;
+  //font-family: $font-1;
+  font-family: sans-serif;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// ACCORDION from romario
+/////////////////////////////////////////////////////////////////////////////////////
+.accordion-item {
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+  overflow-y: auto;
+}
+
+.accordion-item.collapsed {
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-title {
+  cursor: pointer;
+  color: $white-color;
+  padding: 0.5em 1.5em;
+  border: solid 1px $white-color;
+  background-color: $black-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+  }
+
+  &:hover,
+  &.open {
+    color: $white-color;
+  }
+
+  &.open {
+    &::after {
+      content: "";
+      border-top: 0;
+      border-bottom: 5px solid;
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// ACCORDION TRIP
+/////////////////////////////////////////////////////////////////////////////////////
+
+.accordion {
+  height: 83vh;
+  overflow-y: scroll;
+
+}
+
+.accordion__triangle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: all 0.2s;
+  }
+}
+
+.collapse .show {
+  .accordion__triangle {
+    &::after {
+      transform: rotate(180deg) !important;
+    }
+  }
+}
+
+.btn-link:hover {
+  color: $white-color !important;
+  text-decoration: none !important;
+}
+
+.btn-link {
+  font-weight: 800 !important;
+  color: $white-color !important;
+  text-decoration: none !important;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
+
+.card-header {
+  background-color: $black-color !important;
+  color: $white-color !important;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// Expanded Card
+/////////////////////////////////////////////////////////////////////////////////////
+.expanded-card {
+  font-family: $font-2;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__key {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+}
+
+.expanded-card__ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  align-items: baseline;
+}
+.expanded-card__list {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 16px;
+  //line-height: 20px;
+  padding: 1rem;
+}
+.active.expanded-card__icon__container {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.expanded-card__icon {
+  width: 30px;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// SETTINGS
+/////////////////////////////////////////////////////////////////////////////////////
+.settings-block {
+  padding: 5%;
+  margin-bottom: 4.8rem;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// TABLE CONTAINER
+/////////////////////////////////////////////////////////////////////////////////////
+.shipment__table__accept__btn {
+  position: absolute;
+  top: 11vh;
+  right: 1vh;
+  width: 140px !important;
+  z-index: 100;
+}
+
+@media screen and (max-width: 340px) {
+  .NonameBtn {
+    width: 85px !important;
+  }
+}
+
+.shipment__cell__img__container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shipment__cell__img {
+  width: 20px;
+}
+
+.ShipmentAddForm {
+  width: 93vh;
+}
+///////////////////////////////////////////////////
+///////////////STAR RATING
+///////////////////////////////////////////////////
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating > * {
+  float: right;
+}
+
+.rating label {
+  width: 80px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.rating label:after {
+  position: absolute;
+  content: "★";
+  color: #f9bf3b;
+  text-shadow: 0 0 20px #f9bf3b;
+  bottom: -3vh;
+  left: 30px;
+  text-align: center;
+  font-size: 3rem;
+
+}
+
+.rating input {
+  display: none;
+}
+
+/////////////////////////////////////
+.profile__tripsRating__container {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

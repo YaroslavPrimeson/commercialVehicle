@@ -1,0 +1,229 @@
+@import "../../index";
+//////////////////////////////////////////////////////////////////////
+///////////////Client Trip
+//////////////////////////////////////////////////////////////////////
+.client-trip {
+  position: relative;
+  height: 84vh;
+  overflow: scroll;
+  &__expanded-card {
+    padding: 5%;
+  }
+}
+//.active.client-trip__expanded-card__img__container
+.client-trip__expanded-card__img__container{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius:50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+.client-trip__expanded-card__img{
+  width: 30px;
+}
+.map-button-show__details {
+  width: 100%;
+}
+
+.show-adding {
+
+  &__map {
+    position: relative;
+    height: calc(100vh - 4.8rem);
+  }
+
+}
+@import "../../index";
+
+.shipment__top__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  //padding: 1vh;
+  height: $height-input-btn *1.5;
+  background-color: black;
+  color: white !important;
+}
+.shipment__top__container__btn {
+  font-family: $font-2;
+  font-weight: bolder;
+  font-size: $font-size-input-btn;
+  height: $height-input-btn * 1.5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s ease-in-out;
+  color: white;
+  background-color: black;
+}
+.shipment__inner {
+  //margin-top: $height-input-btn *1.5;
+  overflow-y: auto;
+}
+.shipment__table {
+  //padding: 1vh;
+  font-family: $font-2;
+  font-weight: bolder;
+  font-size: 16px;
+  //height: calc(100vh - 9.6rem);
+
+  &--card-container {
+    padding: $size-pading;
+  }
+}
+.shipment__cell__container {
+  border: 1px solid $black-color;
+  border-radius: .3rem;
+  height: $height-input-btn * 3;
+  font-size: $font-size-input-btn;
+  margin-bottom: 1vh;
+
+  p {
+    margin: 0;
+  }
+}
+.shipment__cell__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: $size-pading;
+}
+.shipment__cell__string {
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+}
+.shipment-add {
+  color: $black-color;
+  overflow-y: auto;
+  height: calc(100vh - 9.6rem);
+  margin-bottom: $height-input-btn * 1.5;
+
+  .InputForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .NonameBtn {
+    margin-bottom: 1rem;
+  }
+}
+.TripAddForm {
+  width: 100%;
+}
+.ClientPageBottomBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ClientPageRadio {
+  display: flex;
+}
+
+//.searching__trucks {
+//  &:before {
+//    font-size: 6px;
+//    content: ' ';
+//    position: absolute;
+//    right: 0;
+//    bottom: 0;
+//    width: 30px;
+//    height: 30px;
+//    border-radius: 50%;
+//    border: solid 1px $black-color;
+//    background-image: url("TripAdd/loupe.svg");
+//    background-size: 50%;
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    animation: 1.5s pulsing infinite;
+//
+//  }
+//}
+
+
+@keyframes pulsing {
+  from {
+    transform: scale(1);
+    background-position: left;
+  }
+  50% {
+    transform: scale(1.01);
+    background-position: right;
+  }
+  to {
+    transform: scale(1);
+    background-position: left;
+  }
+}
+
+.shipment__cell__top {
+
+  justify-content: space-between;
+
+  &__type {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  &__number {
+    margin-right: 5px !important;
+    color: green;
+  }
+}
+.shipment__cell__top__left {
+  display: flex;
+}
+
+.shipment__cell__middle {
+  &:before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    //background-image: url('TripAdd/fast-forward.svg');
+    background-image: url('TripAdd/placeholder.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: $size-pading;
+  }
+  &:after{
+    content: ' ';
+    position: absolute;
+    display: block;
+    bottom: 45px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    //background-image: url('TripAdd/fast-forward.svg');
+    background-image: url('TripAdd/curved-arrow-with-broken-line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: $size-pading;
+    transform: rotate(
+                    45deg
+    );
+  }
+}
+.shipment__cell__bottom {
+  &:before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    //background-image: url('TripAdd/van.svg');
+    background-image: url('TripAdd/placeholder.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: $size-pading;
+  }
+}
+
+

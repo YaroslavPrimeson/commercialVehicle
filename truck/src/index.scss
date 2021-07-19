@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Mono+One&display=swap');
+
+
+$background: #0b1315;
+$text-color: rgba(201, 171, 129, 0.69);
+$white-color: white;
+$black-color: rgb(0, 0, 0);
+$font-1: 'Rubik Mono One', sans-serif;
+$font-2: 'Roboto', sans-serif;
+
+$menu-width: calc(6vh + 6vw);
+
+$size-pading: calc(.8vh + .8vw);
+$size-pading2: calc(1.2vh + 1.2vw);
+$size-input: calc(1.5vh + 1.5vw);
+
+
+$height-input-btn: 3.2rem;
+$font-size-input-btn: 1rem;
+

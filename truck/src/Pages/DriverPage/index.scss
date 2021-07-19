@@ -1,0 +1,31 @@
+.driver-trip {
+  position: relative;
+  height: calc(100vh - 9.6rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+//&__expanded-block {
+//  padding: 5%;
+//
+//}
+}
+.map-button-show__map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  transform: translate(-50%, 50%);
+  background-color: white;
+}
+
+.map-button-show__details {
+  width: 200px;
+  background-color: white;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.profile__user__reviews__container{
+  margin: 20px auto
+;
+}

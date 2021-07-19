@@ -1,0 +1,167 @@
+@import "../../../index.scss";
+
+///////////////////////////////////////////////////////////////////////
+///////////////////////////Accordion border-radius none
+///////////////////////////////////////////////////////////////////////
+.card {
+  border-radius: 0 !important;
+}
+
+///////////////////////////////////////////////////////////////////////
+//////////////////////////CHAT
+///////////////////////////////////////////////////////////////////////
+.chat__filter__container {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.chat__filter__input {
+  width: 80vw;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.chat__messenger__allUser__list__container {
+  height: 83vh;
+}
+
+.chat__messages__container__block {
+  width: 100%;
+  height: 71vh;
+  overflow-y: scroll;
+}
+
+.chat__messenger__allUser__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+.chat__messenger__block__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat__messenger__list__logo__container {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.chat__messenger__list__logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat__messenger__list__text {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.chat__messages__return__button {
+  background: black;
+  color: white;
+  height: 76px;
+}
+
+.chat__messages__return__button__ico {
+  background: url("../../../assets/svg/left-arrow.svg") center no-repeat;
+  position: absolute;
+  color: white;
+  top: 25px;
+  left: 11px;
+  width: 30px;
+  height: 30px;
+}
+
+.chat__messages__container {
+  width: 100%;
+  height: 80vh;
+  //border: 1px solid black;
+  //background: url("../../../assets/images/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg")center no-repeat;
+  background: url("../../../assets/images/watercolor3-grey-watercolor-background.png") center no-repeat;
+  background-size: cover;
+  padding: 5px;
+}
+
+.accordion {
+  height: auto !important;
+}
+
+//.chat__messages__container__message {
+//  background: antiquewhite;
+//  border-radius: 2rem;
+//}
+
+.chat__messages__text__style {
+  margin: 10px;
+  border: 1px solid black;
+
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 5px 20px;
+}
+.chat__messages__text__left{
+  margin-left: auto;
+  background: $white-color;
+}
+.chat__messages__text__right{
+  margin-left: 10px;
+  background: antiquewhite;
+}
+.chat__messages__user__logo__container {
+  display: flex;
+  align-items: center;
+}
+
+.chat__messages__user__logo {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.chat__input__container {
+  width: 100%;
+  //height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.chat__input__sendMessage__button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  left: 81vw;
+  bottom: 52px;
+
+  & :hover, &:active, &:focus-visible {
+    outline: none;
+  }
+}
+
+.chat__input__sendMessage__span {
+  background: url("../../../assets/svg/aeroplane.svg") center no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.chat__input__sendMessage {
+  padding: 1rem;
+  height: 50px;
+}

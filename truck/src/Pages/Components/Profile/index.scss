@@ -1,0 +1,298 @@
+////////////////////////////////////////////
+//Profile
+//////////////////////////////////////////
+.profile__main__container{
+height: 85vh;
+  overflow-y: scroll;
+}
+.profile__userLogo__border {
+  width: 100px;
+  overflow: hidden;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.profile__user__name__container {
+  border-bottom: 1px solid rgba(153, 150, 150, 0.24);
+  padding: 1rem;
+}
+
+//.active.profile__user__name__container{
+//  display: flex;
+//  justify-content: space-between;
+//  width: 100%;
+//  margin: 25px 0;
+//}
+.profile__userLogo {
+  width: 100% !important;
+  height: auto;
+}
+
+.profile__subtitle {
+  text-align: center;
+}
+
+.profile__auto__container {
+  margin-bottom: 20px;
+}
+
+.profile__user__container {
+  padding: 2rem;
+}
+
+.profile__user__reviews__title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 90vw !important;
+}
+
+.profileDriver__swiper__container__block {
+  width: 90vw !important;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+///////////////////////////////////
+///////for client
+//////////////////////////////////
+.profile__swiper__container__block {
+  width: 83vw !important;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+///////////////////////////////////
+///////for driver
+//////////////////////////////////
+.profile__auto__input__change__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__auto__button__change {
+  width: 120px !important;
+  height: 50px !important;
+}
+.profile__auto__button__change__input{
+    width: 40% !important;
+}
+.profile__auto__input__change {
+  height: 50px;
+  padding: 1rem;
+}
+.rating__profile__driver__container{
+  position: relative;
+}
+.rating__profile__driver__star:before{
+  content: "★";
+  color: #f9bf3b;
+  text-shadow: 0 0 20px #f9bf3b;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  font-size: 50px;
+}
+////////////////////////////////////////////
+//Profile Client
+//////////////////////////////////////////
+//.profile__userLogo__container{
+//  position: fixed;
+//  height: 83vh;
+//  top:0;
+//  right: 0;
+//  background-color: gray;
+//}
+.profile__client__container {
+  height: 82vh;
+  position: fixed;
+  width: 100vw;
+  overflow: scroll;
+  background-color: white;
+  padding: 2rem;
+}
+
+.profile__client__button__cancel {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+}
+
+.active.profile__client__icon__container {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}
+
+.expanded-card__icon {
+  width: 30px;
+}
+
+.profile__number__driver__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 20px;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.profile__button__messages__container {
+  margin-top: 20px;
+}
+
+.profileClient__review__container {
+  margin: 20px auto;
+}
+.none{
+  display: none;
+}
+.profile__starRating__send__review__container {
+  margin: 30px 0;
+}
+
+.profile__input__send__review__container {
+  height: auto;
+}
+
+.profile__input__send__review {
+  width: 83vw;
+  height: 5vh;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+.rating__reviews__container{
+  position: relative;
+}
+.rating__reviews:before {
+  content: "★";
+  color: #f9bf3b;
+  text-shadow: 0 0 20px #f9bf3b;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  /* width: 50px; */
+  /* height: 45px; */
+  font-size: 50px;
+}
+
+////////////////////////////////////////////
+////star rating
+//////////////////////////////////////////
+
+.rating {
+  margin: 50px auto;
+  //width: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating > * {
+  float: right;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+
+.rating label {
+  height: 40px;
+  width: 20%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.rating label:nth-of-type(5):after {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.rating label:nth-of-type(4):after {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.rating label:nth-of-type(3):after {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.rating label:nth-of-type(2):after {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.rating label:nth-of-type(1):after {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+.rating label:after {
+  transition: all 0.4s ease-out;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  content: "☆";
+  color: #444;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 35px;
+  -webkit-animation: 1s pulse ease;
+  animation: 1s pulse ease;
+}
+
+.rating label:hover:after {
+  color: #5e5e5e;
+  text-shadow: 0 0 15px #5e5e5e;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating input:checked + label:after,
+.rating input:checked ~ label:after {
+  content: "★";
+  color: #f9bf3b;
+  text-shadow: 0 0 20px #f9bf3b;
+}
+
+
+
